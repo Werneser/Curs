@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_marginBottom="16dp"
+    android:background="@android:color/darker_gray">
+
+    <EditText
+        android:id="@+id/question_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Question text"
+        android:inputType="text" />
+
+    <RadioGroup
+        android:id="@+id/question_type_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp">
+
+        <RadioButton
+            android:id="@+id/radio_single_choice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Single Choice" />
+
+        <RadioButton
+            android:id="@+id/radio_multiple_choice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Multiple Choice" />
+
+        <RadioButton
+            android:id="@+id/radio_fill_in_blank"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fill in the Blank" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:id="@+id/options_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone" />
+
+    <RadioButton
+        android:id="@+id/radio_correct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Correct"
+        android:visibility="gone" />
+
+</LinearLayout>
